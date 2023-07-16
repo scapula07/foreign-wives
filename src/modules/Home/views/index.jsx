@@ -3,6 +3,7 @@ import TopSection from '../components/TopSection'
 import MidSection from '../components/MIdSection'
 import BottomSection from '../components/BottomSection'
 import "./home.css"
+import Footer from '../../../components/Footer'
 
 export default function HomeView() {
   return (
@@ -10,6 +11,14 @@ export default function HomeView() {
         <TopSection />
         <MidSection />
         <BottomSection />
+       
+        <div className='py-2' style={{background:"#f1be5f"}}>
+            <Footer
+             text={"Copyright 9ja Wives Reign © 2023"}
+             bg={""}
+            />
+        </div>
+
 
     </div>
   )

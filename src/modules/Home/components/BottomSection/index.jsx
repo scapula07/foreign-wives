@@ -5,6 +5,7 @@ import gambia from "../../../../assets/gambia.jpeg"
 import gambiaflag from "../../../../assets/gambiaflag.png"
 import ghana from "../../../../assets/ghana.jpeg"
 import ghanaflag from "../../../../assets/ghanaflag.png"
+import { Link } from 'react-router-dom'
 
 export default function BottomSection() {
   return (
@@ -15,10 +16,12 @@ export default function BottomSection() {
                 return(
                     <div className='flex flex-col'>
                         <div className='bg-white rounded-lg h-56 p-4 hover:p-0'>
-                            <img 
-                                src={country?.img}
-                                className="w-full hover:w-96 h-full rounded-lg"
-                             />
+                            <Link to={country?.link}>
+                                <img 
+                                    src={country?.img}
+                                    className="w-full hover:w-96 h-full rounded-lg"
+                                />
+                             </Link>
 
                         </div>
                         <div className='flex items-center py-4 justify-center space-x-4'>
@@ -47,17 +50,20 @@ const countries=[
   {
     name:"Nigeria",
     img:nigeria,
-    flag:nigeriaflag
+    flag:nigeriaflag,
+    link:"/:nigeria"
    },
    {
     name:"Gambia ",
     img:gambia,
-    flag:gambiaflag
+    flag:gambiaflag,
+    link:"/:gambia"
    },
    {
     name:"Ghana",
     img:ghana,
-    flag:ghanaflag
+    flag:ghanaflag,
+    link:"/:ghana"
    }
 
 

@@ -7,6 +7,7 @@ import CartSection from './cartSection'
 import Uploads from './uploads'
 import "./application.css"
 
+
 export default function ApplicationViews() {
   return (
     <div className='pb-10'>

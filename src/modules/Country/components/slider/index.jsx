@@ -11,7 +11,7 @@ const Slide=(item)=>{
     <div className='relative'>
       <img 
         src={item.item?.img}
-        className="w-full h-44"
+        className="sm:w-full w-28 h-44"
       />
      <div className='absolute top-0 w-full  h-full flex flex-col justify-end z-10 bg-black opacity-75'>
         <div className='flex flex-col w-full relative z-40 px-4 py-2'>
