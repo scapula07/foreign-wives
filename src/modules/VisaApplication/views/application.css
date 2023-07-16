@@ -1,0 +1,9 @@
+.card-h{
+    height:750px;
+  }
+  
+@media (max-width: 450px){
+    .card-h{
+      height:300px;
+    }
+}

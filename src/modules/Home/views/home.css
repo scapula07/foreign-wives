@@ -1,0 +1,19 @@
+.home-h{
+  height:750px;
+}
+
+@media (max-width: 450px){
+   .home-h{
+    height:400px;
+   }
+}
+
+.imgbg-h{
+    height:400px;
+  }
+  
+  @media (max-width: 450px){
+     .imgbg-h{
+      height:700px;
+     }
+  }

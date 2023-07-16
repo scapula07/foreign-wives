@@ -1,0 +1,104 @@
+.gallery {
+    --d: 4s;
+    --n:5;
+    --r:6;
+    display: grid;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .gallery > img {
+    grid-area: 1/1;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 10px solid #f2f2f2;
+    box-shadow: 0 0 4px #0007;
+    z-index: 2;
+    animation: slide var(--d) infinite, z-order var(--d) infinite steps(1);
+  }
+  
+  .gallery img:last-child {
+    animation-name: slide, z-order-last;
+  }
+  
+  .gallery > img:nth-child(1) {
+    animation-delay: calc(0/var(--n) * var(--d));
+  }
+  
+  .gallery > img:nth-child(2) {
+    animation-delay: calc(1/var(--n) * var(--d));
+  }
+  
+  .gallery > img:nth-child(3) {
+    animation-delay: calc(2/var(--n) * var(--d));
+  }
+  
+  /* Repeat the above pattern for all 19 images */
+  
+  @keyframes slide {
+    2% {
+      transform: translateX(120%) rotate(var(--r));
+    }
+    0%,
+    100%,
+    5% {
+      transform: translateY(0%) rotate(var(--r));
+    }
+  }
+  
+  @keyframes z-order {
+    2%,
+    5% {
+      z-index: 1;
+    }
+    95% {
+      z-index: 2;
+    }
+  }
+  
+  @keyframes z-order-last {
+    2%,
+    5% {
+      z-index: 1;
+    }
+    90% {
+      z-index: 2;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .gallery {
+      --d: 60s;
+      justify-content: center;
+      display: grid;
+      text-align: center;
+      margin-left: 75px;
+      width: 200px;
+      height: 300px;
+    }
+    @keyframes slide {
+      2% {
+        transform: translateY(120%) rotate(var(--r));
+      }
+      0%,
+      100%,
+      5% {
+        transform: translateY(0%) rotate(var(--r));
+      }
+    }
+  }
+  
+  @media (max-width: 850px) {
+    @keyframes slide {
+      2% {
+        transform: translateY(120%) rotate(var(--r));
+      }
+      0%,
+      100%,
+      5% {
+        transform: translateY(0%) rotate(var(--r));
+      }
+    }
+  }
+  
