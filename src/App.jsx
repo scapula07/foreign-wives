@@ -7,6 +7,8 @@ import Country from './pages/country'
 import VisaApplication from './pages/visaApplication'
 import Visa from './pages/Visa'
 import NwcAuth from './pages/NwcAuth'
+import Cameroon from './pages/cameroon'
+import Canada from './pages/canada'
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
       <Route exact path="/9jawivescard"  element={  <VisaApplication />} />
       <Route exact path="/9jawives-visa"  element={  <Visa />} />
       <Route exact path="/nwc"  element={  <NwcAuth />} />
+      <Route exact path="/cameroon"  element={  <Cameroon />} />
+      <Route exact path="/canada"  element={  <Canada/>} />
+      
    </Routes>
      )
 }

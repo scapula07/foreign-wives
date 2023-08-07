@@ -11,7 +11,7 @@ export default function BottomSection() {
   return (
     <div className='flex flex-col items-center w-full py-14'>
         <h5 className='text-4xl font-semibold text-white text-center'>CHOOSE YOUR DOMINION</h5>
-        <div className='flex sm:flex-row flex-col py-8 items-center sm:space-x-8 space-y-4 px-4 sm:px-0'>
+        <div className='flex sm:flex-row flex-col py-8 items-center sm:space-x-8 space-y-4 px-4 sm:px-6 sm:overflow-x-scroll'>
             {countries.map((country)=>{
                 return(
                     <div className='flex flex-col'>
@@ -53,6 +53,19 @@ const countries=[
     flag:nigeriaflag,
     link:"/:nigeria"
    },
+   {
+    name:"Cameroon",
+    img:ghana,
+    flag:ghanaflag,
+    link:"/cameroon"
+   },
+   {
+    name:"Canada",
+    img:ghana,
+    flag:ghanaflag,
+    link:"/canada"
+   },
+
    {
     name:"Gambia ",
     img:gambia,
