@@ -67,16 +67,10 @@ const countries=[
    },
 
    {
-    name:"Gambia ",
+    name:"United kingdom ",
     img:gambia,
     flag:gambiaflag,
-    link:"/:gambia"
-   },
-   {
-    name:"Ghana",
-    img:ghana,
-    flag:ghanaflag,
-    link:"/:ghana"
+    link:"/uk"
    }
 
 
