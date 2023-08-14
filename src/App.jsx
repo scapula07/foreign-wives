@@ -25,7 +25,7 @@ function App() {
       <Route exact path="/nwc"  element={  <NwcAuth />} />
       <Route exact path="/cameroon"  element={  <Cameroon />} />
       <Route exact path="/canada"  element={  <Canada/>} />
-      <Route exact path="/kenya"  element={  <Kenya/>} />
+      <Route exact path="/uk"  element={  <Kenya/>} />
       
    </Routes>
      )
