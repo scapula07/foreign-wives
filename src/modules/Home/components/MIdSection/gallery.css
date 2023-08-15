@@ -1,6 +1,6 @@
 .gallery {
-    --d: 4s;
-    --n:5;
+    --d: 6s;
+    --n:8;
     --r:6;
     display: grid;
     width: 300px;

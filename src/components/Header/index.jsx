@@ -3,7 +3,7 @@ import {BiSearch,BiNotification} from "react-icons/bi"
 import {BsCartFill} from "react-icons/bs"
 import {AiOutlineHeart,AiOutlineClose} from "react-icons/ai"
 import { Link } from 'react-router-dom'
-import logo from "../../assets/logo1.png"
+import logo from "../../assets/logofw.png"
 import {BiMenu} from "react-icons/bi"
 
 
@@ -12,12 +12,12 @@ import {BiMenu} from "react-icons/bi"
 export default function Header() {
     const [trigger,setTrigger]=useState(false)
   return (
-    <div className=' w-full bg-black'>
+    <div className=' w-full bg-black opacity-80'>
         <div className='flex w-full justify-between items-center'>
             <div>
                 <img
                   src={logo}
-                  className="w-10 h-10"
+                  className="w-14 h-14"
                  />
 
             </div>

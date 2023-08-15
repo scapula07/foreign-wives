@@ -2,9 +2,10 @@ import React from 'react'
 import nigeria from "../../../../assets/nigeria.jpeg"
 import nigeriaflag from "../../../../assets/nigeriaflag.png"
 import gambia from "../../../../assets/gambia.jpeg"
-import gambiaflag from "../../../../assets/gambiaflag.png"
+import gambiaflag from "../../../../assets/cameroonflag.png"
 import ghana from "../../../../assets/ghana.jpeg"
-import ghanaflag from "../../../../assets/ghanaflag.png"
+import ghanaflag from "../../../../assets/ukflag.png"
+import candaflag from "../../../../assets/canadaflag.png"
 import { Link } from 'react-router-dom'
 
 export default function BottomSection() {
@@ -28,7 +29,7 @@ export default function BottomSection() {
                             <h5 className='text-xl font-semibold'>{country?.name}</h5>
                             <img 
                               src={country?.flag}
-                              className="h-12 w-12"
+                              className="h-12 w-12 rounded-full"
                             />
 
                         </div>
@@ -56,20 +57,20 @@ const countries=[
    {
     name:"Cameroon",
     img:ghana,
-    flag:ghanaflag,
+    flag:gambiaflag,
     link:"/cameroon"
    },
    {
     name:"Canada",
     img:ghana,
-    flag:ghanaflag,
+    flag:candaflag,
     link:"/canada"
    },
 
    {
     name:"United kingdom ",
     img:gambia,
-    flag:gambiaflag,
+    flag:ghanaflag,
     link:"/uk"
    }
 

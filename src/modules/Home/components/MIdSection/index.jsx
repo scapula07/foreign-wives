@@ -22,7 +22,7 @@ export default function MidSection() {
                       className="w-full relative z-50"
                     />
                     <div className='z-20 relative flex flex-col items-center space-y-4'>
-                        <h5 className='text-lg font-semibold text-yellow-400 font-serif '>Mission Statement</h5>
+                        <h5 className='text-5xl font-semibold text-yellow-400 font-serif ' style={{fontFamily:"'Corinthia', cursive"}}>Mission Statement</h5>
                          <p className='text-white font-semibold text-center w-3/4'>
                             Intercultural Marriages
                         are both rewarding and challenging.
