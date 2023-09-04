@@ -6,8 +6,8 @@ import logo from "../../../../assets/9ja.png"
 
 export default function SideNav() {
   return (
-    <div className='w-full h-full flex flex-col space-y-14 py-4 ' style={{background:"rgba(28, 36, 28, 1)"}}>
-        <div className='py-8'>
+    <div className='w-full h-full flex flex-col space-y-10 py-4 ' style={{background:"rgba(28, 36, 28, 1)"}}>
+        <div className=''>
             <div className=' py-1 flex w-full justify-center' style={{background:"rgba(254, 230, 120, 1)"}}>
                 <img 
                  src={logo}
@@ -39,24 +39,48 @@ export default function SideNav() {
               },
               {
                 icon:<BsGrid />,
-                text:"Dashboard"
+                text:"Groups"
 
 
               },
               {
                 icon:<BsGrid />,
-                text:"Dashboard"
+                text:"Activites"
 
 
               },
               {
                 icon:<BsGrid />,
-                text:"Dashboard"
+                text:"Pamper me"
 
 
               },{
                 icon:<BsGrid />,
-                text:"Dashboard"
+                text:"Support"
+
+
+              },
+              {
+                icon:<BsGrid />,
+                text:"Chauffeur"
+
+
+              },
+              {
+                icon:<BsGrid />,
+                text:"Affiliates"
+
+
+              },
+              {
+                icon:<BsGrid />,
+                text:"Resources"
+
+
+              },
+              {
+                icon:<BsGrid />,
+                text:"Account"
 
 
               }

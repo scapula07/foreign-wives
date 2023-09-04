@@ -1,6 +1,7 @@
 import React from 'react'
 import SearchBar from '../searchBar'
 import {MdOutlineNotifications} from "react-icons/md"
+import user from "../../../../assets/user.png"
 export default function Header() {
   return (
      <div className='w-full ' style={{background:"rgba(28, 36, 28, 1)"}}>
@@ -12,15 +13,16 @@ export default function Header() {
 
              </div>
 
-             <div className='flex items-center space-x-4' >
+             <div className='flex items-center space-x-6' >
                  <SearchBar />
 
                  <h5 className='p-2 items-center flex justify-center border border-white rounded-full'>
                     <MdOutlineNotifications className='text-white text-2xl'/>
                  </h5>
-                 <h5>
-                    
-                 </h5>
+                 <img 
+                   src={user}
+                   className="rounded-full"
+                 />
              </div>
 
          </div>
