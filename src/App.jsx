@@ -10,7 +10,7 @@ import NwcAuth from './pages/NwcAuth'
 import Cameroon from './pages/cameroon'
 import Canada from './pages/canada'
 import Kenya from './pages/kenya'
-
+import Dashboard from './pages/dashboard'
 
 function App() {
 
@@ -26,6 +26,7 @@ function App() {
       <Route exact path="/cameroon"  element={  <Cameroon />} />
       <Route exact path="/canada"  element={  <Canada/>} />
       <Route exact path="/uk"  element={  <Kenya/>} />
+      <Route exact path="/dashboard"  element={  <Dashboard/>} />
       
    </Routes>
      )
