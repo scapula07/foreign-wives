@@ -4,9 +4,10 @@ import {BiMessageRounded} from "react-icons/bi"
 import {RiUserHeartLine} from "react-icons/ri"
 import logo from "../../../../assets/9ja.png"
 
+
 export default function SideNav() {
   return (
-    <div className='w-full h-full flex flex-col space-y-10 py-4 ' style={{background:"rgba(28, 36, 28, 1)"}}>
+    <div className='w-full h-full flex flex-col space-y-10 py-4 ' style={{background:"#1C241C"}}>
         <div className=''>
             <div className=' py-1 flex w-full justify-center' style={{background:"rgba(254, 230, 120, 1)"}}>
                 <img 
@@ -21,7 +22,8 @@ export default function SideNav() {
         <div className='flex flex-col space-y-8 px-8'>
             {[{
                 icon:<BsGrid />,
-                text:"Dashboard"
+                text:"Dashboard",
+                link:""
 
 
               },

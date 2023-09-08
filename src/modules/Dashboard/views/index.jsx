@@ -1,19 +1,20 @@
 import React from 'react'
 import SideNav from '../components/sideNav'
 import Header from '../components/header'
+import {Outlet} from "react-router-dom"
 
 export default function DashboardView({children}) {
   return (
     <div className='w-full h-screen overflow-y-hidden'>
          <div className='flex h-full w-full space-x-0.5'>
-               <div className='w-1/6 h-screen' style={{background:"rgba(28, 36, 28, 1)"}}>
+               <div className='w-1/6 h-screen' style={{background:"#1C241C"}}>
                   <SideNav />
 
                </div>
                <div className='w-full h-screen'>
                   <Header />
-                  <div>
-                    {children}
+                  <div className='py-10 h-full px-10'>
+                    <Outlet />
                   </div>
   
                </div>

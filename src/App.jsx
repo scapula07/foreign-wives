@@ -11,6 +11,8 @@ import Cameroon from './pages/cameroon'
 import Canada from './pages/canada'
 import Kenya from './pages/kenya'
 import Dashboard from './pages/dashboard'
+import Overview from './modules/Dashboard/views/overview'
+import Posts from './modules/Dashboard/components/feeds/posts'
 
 function App() {
 
@@ -26,7 +28,14 @@ function App() {
       <Route exact path="/cameroon"  element={  <Cameroon />} />
       <Route exact path="/canada"  element={  <Canada/>} />
       <Route exact path="/uk"  element={  <Kenya/>} />
-      <Route exact path="/dashboard"  element={  <Dashboard/>} />
+      <Route exact path="/dashboard"  element={  <Dashboard/>} >
+           <Route exact path=""  element={  <Overview/>} >
+           <Route exact path=""  element={  <Posts/>} />
+
+          </Route>
+
+      
+      </Route>
       
    </Routes>
      )
