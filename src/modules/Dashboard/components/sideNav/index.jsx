@@ -3,8 +3,11 @@ import {BsGrid} from "react-icons/bs"
 import {BiMessageRounded} from "react-icons/bi"
 import {RiUserHeartLine} from "react-icons/ri"
 import logo from "../../../../assets/9ja.png"
-
-
+import {MdOutlinePerson2} from "react-icons/md"
+import {GiTeacher} from "react-icons/gi"
+import {TbAffiliate} from "react-icons/tb"
+import {GrResources} from "react-icons/gr"
+ 
 export default function SideNav() {
   return (
     <div className='w-full h-full flex flex-col space-y-10 py-4 ' style={{background:"#1C241C"}}>
@@ -28,7 +31,7 @@ export default function SideNav() {
 
               },
               {
-                icon:<BiMessageRounded />,
+                icon:<MdOutlinePerson2 />,
                 text:"Account"
 
 
@@ -40,8 +43,9 @@ export default function SideNav() {
 
               },
               {
-                icon:<BsGrid />,
-                text:"Activities"
+                icon:<GiTeacher />,
+                text:"Activities",
+                link:"activities"
 
 
               },
@@ -58,13 +62,13 @@ export default function SideNav() {
 
               },
               {
-                icon:<BsGrid />,
+                icon:<TbAffiliate />,
                 text:"Affiliates"
 
 
               },
               {
-                icon:<BsGrid />,
+                icon:<GrResources />,
                 text:"Resources"
 
 
@@ -77,7 +81,7 @@ export default function SideNav() {
               }
             ].map((nav)=>{
                  return (
-                    <div className='flex items-center space-x-4 '>
+                    <div className='flex items-center space-x-4 hover:bg-yellow-500 hover:py-2 hover:px-2 hover:rounded-sm  '>
                          <h5 className='text-white font-semibold text-sm'>{nav?.icon}</h5>
                          <h5 className='text-white font-semibold text-sm'>{nav?.text}</h5>
                     </div>
