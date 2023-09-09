@@ -13,6 +13,8 @@ import Kenya from './pages/kenya'
 import Dashboard from './pages/dashboard'
 import Overview from './modules/Dashboard/views/overview'
 import Posts from './modules/Dashboard/components/feeds/posts'
+import Activities from './modules/Dashboard/views/activities'
+import Account from './modules/Dashboard/views/account'
 
 function App() {
 
@@ -31,8 +33,12 @@ function App() {
       <Route exact path="/dashboard"  element={  <Dashboard/>} >
            <Route exact path=""  element={  <Overview/>} >
            <Route exact path=""  element={  <Posts/>} />
+       </Route>
+       <Route exact path="activities"  element={  <Activities/>} />
+       <Route exact path="account"  element={  <Account/>} />
 
-          </Route>
+
+        
 
       
       </Route>

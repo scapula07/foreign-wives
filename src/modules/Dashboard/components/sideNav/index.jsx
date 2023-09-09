@@ -29,42 +29,31 @@ export default function SideNav() {
               },
               {
                 icon:<BiMessageRounded />,
-                text:"Messages"
+                text:"Account"
 
 
               },
               {
                 icon:<RiUserHeartLine />,
-                text:"Friends"
+                text:"Services"
 
 
               },
               {
                 icon:<BsGrid />,
-                text:"Groups"
+                text:"Activities"
 
 
               },
               {
                 icon:<BsGrid />,
-                text:"Activites"
+                text:"Subscriptiions"
 
 
               },
               {
-                icon:<BsGrid />,
-                text:"Pamper me"
-
-
-              },{
                 icon:<BsGrid />,
                 text:"Support"
-
-
-              },
-              {
-                icon:<BsGrid />,
-                text:"Chauffeur"
 
 
               },
@@ -82,7 +71,7 @@ export default function SideNav() {
               },
               {
                 icon:<BsGrid />,
-                text:"Account"
+                text:"Share"
 
 
               }

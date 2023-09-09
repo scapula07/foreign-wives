@@ -3,7 +3,7 @@ import {BiSearch,BiNotification} from "react-icons/bi"
 import {BsCartFill} from "react-icons/bs"
 import {AiOutlineHeart,AiOutlineClose} from "react-icons/ai"
 import { Link } from 'react-router-dom'
-import logo from "../../assets/logofw.png"
+import logo from "../../assets/newlogo.png"
 import {BiMenu} from "react-icons/bi"
 
 

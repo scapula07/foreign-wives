@@ -13,7 +13,7 @@ export default function DashboardView({children}) {
                </div>
                <div className='w-full h-screen'>
                   <Header />
-                  <div className='py-10 h-full px-10'>
+                  <div className='py-10 h-full px-10 overflow-y-scroll'>
                     <Outlet />
                   </div>
   
