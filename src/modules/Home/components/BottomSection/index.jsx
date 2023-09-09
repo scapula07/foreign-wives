@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom'
 
 export default function BottomSection() {
   return (
-    <div className='flex flex-col items-center w-full py-14'>
+    <div className='flex flex-col items-center w-full py-14 '>
         <h5 className='text-4xl font-semibold text-white text-center'>CHOOSE YOUR DOMINION</h5>
-        <div className='flex sm:flex-row flex-col py-8 items-center sm:space-x-8 space-y-4 px-4 sm:px-6 sm:overflow-x-scroll'>
+        <div className='flex sm:flex-row flex-col py-8 items-center sm:space-x-8 space-y-4 px-4 sm:px-6 overflow-x-scroll' style={{width:"180%"}}>
             {countries.map((country)=>{
                 return(
                     <div className='flex flex-col'>
@@ -72,6 +72,18 @@ const countries=[
     img:gambia,
     flag:ghanaflag,
     link:"/uk"
+   },
+   {
+    name:"Ghana ",
+    img:ghana,
+    flag:ghana,
+    link:"https://foreign-wives-reign.vercel.app/ghana-wives"
+   },
+   {
+    name:"Kenya",
+    img:ghana,
+    flag:ghana,
+    link:"https://foreign-wives-reign.vercel.app/kenya-wives"
    }
 
 
